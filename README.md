@@ -22,26 +22,7 @@ The project compares participation rate and performace in these Districts with o
 
 ### Problem Statement
 
-Generally speaking, you will be asked to come up with a data science problem. This problem is ultimately up to you, but below are some guidelines/things to consider when crafting a problem statement:
-> 1. Consider your audience. Who is your project going to help? Who will your presentation be geared towards? Establishing your audience first can help you narrow down your scope.
-> 2. Consider the data you will use. Based on the contents of this data, think about some questions you could reasonably answer. These questions should aim to solve some kind of problem.
-> 3. Based on these questions, what would bring some kind value to your audience? This can be business insights, increase sales, make decisions, etc.
-> 4. Put everything from the above steps together into a few sentences that describe the specific problem you are trying to solve and who it will benefit.
-> [Here is a blog post](https://towardsdatascience.com/defining-a-data-science-problem-4cbf15a2a461) about crafting a data science problem statement.
-
-Here are some example prompts if you need inspiration:
-> * The new format for the SAT was released in March 2016. As an employee of the College Board - the organization that administers the SAT - you are a part of a team that tracks statewide participation and recommends where money is best spent to improve SAT participation rates. Your presentation and report should be geared toward non-technical executives with the College Board and you will use the provided data and outside research to make recommendations about how the College Board might work to increase the participation rate in a *state of your choice*.
-> * You work for a school district that has asked you to advise their high school students on what SAT or ACT score they should be aiming for based on their intended area of study or school preferences.
-> * You are hired by the state of California to analyze standardized test performance for various districts in the state and identify trends so they can allocate resources appropriately.
-> * Lately, more and more schools are opting to drop the SAT/ACT requirement for their Fall 2021 applications ([*read more about this here*](https://www.cnn.com/2020/04/14/us/coronavirus-colleges-sat-act-test-trnd/index.html)). You are hired by a college to advise their admissions team on why this should or should not continue beyond the Fall 2021 applications. (Note: problem statements related to this prompt may not be reasonable to answer just using the data provided. If you want to tackle this one, you may need to find additional data online.)
-> * *Feel free to be creative with your own prompt!*
-
-And here are some example problem statements related to the above prompts. Come up with your own or modify these for your needs, do not just copy the ones given here:
-> * The new format for the SAT was released in March 2016. Since then, levels of participation in multiple states have changed with varying legislative decisions. This project aims to explore trends in SAT and ACT participation for the years 2017-2019 and seeks to identify states that have decreasing SAT participation rates.
-> * High school students often know which colleges they would like to consider, but rarely know what SAT or ACT score they should aim for when applying to these colleges. We wish to explore the schools that have the highest and lowest SAT and ACT score requirements and see if there is a relationship between college prestige and test scores.
-> * The state of California has many school districts. This project aims to identify the districts that have the worst overall student performance on the SAT and ACT tests so the state can recommend programs and allocate resources to these districts in need. 
-> * We hypothesize that student performance on these tests is not an indicator of overall academic performance. This project seeks to see if a relationship exists between student GPA and SAT/ACT scores to support or oppose the continuation of these tests as a requirement for college applications.
-> * *Feel free to be creative with your own problem statement!*
+This project compares ACT dn SAT results in the school districts and counties of California over three Accademic Years (2016/17, 2017/18 and 2018/19). The analysis at County and District level addresses San Mateo Union High School Union in understanding the efficacy of its support to students.
 
 ---
 
@@ -81,6 +62,19 @@ There are datasets included in the [`data`](./data/) folder for this project.
 |**tot_num_both_benchmark**|*float64*|SAT|The total number of students who met the benchmark of both Evidence-Based Reading & Writing (ERW) and Math|
 |**pct_both_benchmark**|*float64*|SAT|The percent of students who met the benchmark of both Evidence-Based Reading & Writing (ERW) and Math|
 
+### Findings
+
+The general trend of students taking SAT in G12, is descending from the AY 2017-18, with a significant consistent drop in every county in 2018-19.
+
+Data show a negative trend in SAT performances over the three years analyzed.
+Also, students achieve higher scores in English Reading and Writing than in Math, but the negative trend described is equally affecting both sections of SAT.
+
+As this project addresses San Mateo Union High on wether to adopt a *free for all* SAT test policy, the project presents a series of analysis showing SAT performances in Discricts who adopted the policy vs San Mateo.
+
+* The participation in San Mateo Union High is between 40 to 60% in the three years examined. Districts offering SAT for free reach peaks of higher participation around year 2, but the increase does not appear to be consistent, dropping almost everywhere in the AY 2018-19.
+
+* About 80% of of students at San Mateo Union High have successfully met the benchmark over the examined period; in the districts offering the SAT for free performances are overall lower, and don't appear to be increasing over time.
+
 ### Conclusions
 
 ##### 1. Free SAT is not increasing participation
@@ -91,3 +85,8 @@ SAT has been offered for free since 2016 by counties around the State and overal
 
 ##### 3. Suggested Action: Math 
 SMUH have been performing above average in the State, but strengthening Math skills can significantly improve students success rate in SAT.
+
+### Possible next steps
+
+From the present analysis, there is no prove of a correlation between income and performance at SAT at county level in California. Futher analysis could be made to identify oter factors that might influence positively or negatively the performances of students from an environmental perspective.
+It would be interesting to relate the income and the rate of students enrolled in G12, to verify that this result is actually significant.
